@@ -1,15 +1,14 @@
 import React from 'react';
 import {Image, StyleSheet, View} from 'react-native';
 
-const Banner = () => {
+const Banner = ({image}) => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
           source={{
-            uri:
-              'https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75',
+            uri: image,
           }}
         />
       </View>

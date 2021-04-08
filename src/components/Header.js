@@ -6,9 +6,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {colors} from '../constants/colors';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {PulseIndicator} from 'react-native-indicators';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {colors} from '../constants/colors';
 
 const Header = () => {
   return (
@@ -20,6 +21,7 @@ const Header = () => {
       <View style={styles.searchbar}>
         <MaterialCommunityIcons name="magnify" size={22} color={colors.gray} />
         <Text style={styles.searchlabel}>Cari item, destinasi, fitur...</Text>
+        <PulseIndicator style={styles.pulse} color="#E26433" size={18} />
       </View>
       <TouchableOpacity style={styles.menu}>
         <MaterialCommunityIcons
@@ -57,6 +59,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: '#53585B',
     marginLeft: 8,
+  },
+  pulse: {
+    position: 'absolute',
+    right: 16,
   },
   menu: {
     zIndex: 1,

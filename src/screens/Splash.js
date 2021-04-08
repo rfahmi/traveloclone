@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
-import {Image, StatusBar, Text, View} from 'react-native';
+import {Image, StatusBar, StyleSheet, Text, View} from 'react-native';
 import {colors} from '../constants/colors';
+import {DotIndicator} from 'react-native-indicators';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
@@ -21,7 +22,10 @@ const Splash = ({navigation}) => {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        {/* <Logo /> */}
+        <Image
+          source={require('../assets/icons/logo.png')}
+          style={styles.logo}
+        />
         <View
           style={{
             position: 'absolute',
@@ -30,9 +34,9 @@ const Splash = ({navigation}) => {
             right: 0,
             alignItems: 'center',
           }}>
-          <Text style={{color: colors.gray, fontSize: 12}}>Versi Test</Text>
+          <DotIndicator style={styles.pulse} color={colors.primary} size={12} />
           <Text style={{color: colors.gray, fontSize: 12}}>
-            {'\u00A9'} PT. Harnic Online Store
+            Traveloka Clone
           </Text>
         </View>
       </View>
@@ -41,3 +45,10 @@ const Splash = ({navigation}) => {
 };
 
 export default Splash;
+
+const styles = StyleSheet.create({
+  logo: {
+    width: 100,
+    height: 100,
+  },
+});

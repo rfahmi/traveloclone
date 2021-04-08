@@ -16,10 +16,10 @@
                 "type" : "banner_grid",
                 "size" : 2,
                 "items": [
-                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
-                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
-                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
-                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75"
+                    "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2F1.png?alt=media&token=90568627-3f1c-4052-9845-d5da343db21a",
+                    "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2F2.png?alt=media&token=940061c7-1bd9-43e1-9b9f-3067396f9f63",
+                    "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2F3.png?alt=media&token=5355f6d8-a97b-4d81-a3c7-49b3a3782620",
+                    "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2F4.png?alt=media&token=665c0f26-fc89-4200-be6c-31bc905313d8"
                 ]
             }
         ]
@@ -35,25 +35,48 @@
             },
             {
                 "type" : "stream_slide",
+                "hasDesc" : true,
                 "size" : 2,
+                "ratio" : 1.5,
                 "items": [
                     {
-                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                        "image": "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2Frachel.png?alt=media&token=ecefb5e9-423e-4042-b97d-5eda7801da60",
                         "title": "Jam Terbang hari ke-3",
                         "date": "Kamis, 8 April 2021",
                         "time": "19.00 - 20:30 WIB"
                     },
                     {
-                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                        "image": "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2Fi-01.png?alt=media&token=6862fc25-ed02-484a-8747-d9b5d8b180cb",
                         "title": "Traveloka Live",
-                        "date": "",
-                        "time": ""
+                        "date": "Kamis, 8 April 2021",
+                        "time": "19.00 - 20:30 WIB"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "backgroundColor": "#FFF7D6",
+        "cornerIcon": "alert",
+        "cornerIconColor": "#FEEFAE",
+        "components": [
+            {
+                "type" : "title",
+                "content1": "Berita Penting",
+                "content2": "Informasi perjalanan terkini per 1 April 2021"
+            },
+            {
+                "type" : "stream_slide",
+                "hasDesc" : false,
+                "size" : 2,
+                "ratio" : 1,
+                "items": [
+                    {
+                        "image": "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2Fi-02.png?alt=media&token=8f6d27a4-9f60-4f0c-8d03-19d8c79d5b3d"
                     },
                     {
-                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
-                        "title": "",
-                        "date": "",
-                        "time": ""
+                        "image": "https://firebasestorage.googleapis.com/v0/b/rfahmi-id.appspot.com/o/others%2Fi-03.png?alt=media&token=15312dc9-4bea-434a-a440-c5ecfe0c79f2"
                     }
                 ]
             }

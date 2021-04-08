@@ -33,7 +33,7 @@ const AppStack = () => {
         options={{
           tabBarLabel: 'Simpan',
           tabBarIcon: ({color}) => (
-            <Icon name="bookmark-multiple" color={color} size={26} />
+            <Icon name="bookmark-multiple-outline" color={color} size={26} />
           ),
         }}
       />

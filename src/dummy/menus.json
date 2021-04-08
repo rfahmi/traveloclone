@@ -73,53 +73,33 @@
     ],
     "secondary" : [
         {
-            "icon": "",
+            "icon": "credit-card-clock-outline",
             "label": "PayLater Card",
             "isNew": true
         },
         {
-            "icon": "",
+            "icon": "newspaper-variant-outline",
             "label": "Tagihan & Isi Ulang",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "shield-sync-outline",
             "label": "Asuransi",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "car-back",
             "label": "Antar Jemput Bandara",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "ticket-percent-outline",
             "label": "Paket Diskon",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "brightness-percent",
             "label": "Voucher hadiah",
-            "isNew": false
-        },
-        {
-            "icon": "",
-            "label": "Internet Luar negeri",
-            "isNew": false
-        },
-        {
-            "icon": "",
-            "label": "Status Penerbangan",
-            "isNew": false
-        },
-        {
-            "icon": "",
-            "label": "Budget Planner",
-            "isNew": false
-        },
-        {
-            "icon": "",
-            "label": "Notifikasi Harga",
             "isNew": false
         }
     ]

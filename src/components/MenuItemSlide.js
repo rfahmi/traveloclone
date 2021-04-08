@@ -17,7 +17,11 @@ const MenuItem = ({data}) => {
         </View>
       )}
       <TouchableOpacity style={styles.button}>
-        <MaterialCommunityIcons name="home" size={32} color="#53585B" />
+        <MaterialCommunityIcons
+          name={data.icon || 'information-outline'}
+          size={32}
+          color={data.iconColor || '#53585B'}
+        />
       </TouchableOpacity>
       <Text style={styles.label}>{data.label}</Text>
     </View>

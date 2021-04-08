@@ -10,7 +10,14 @@ const StreamSlide = ({data}) => {
       showsHorizontalScrollIndicator={false}
       snapToAlignment
       keyExtractor={(_, i) => 'stream' + i.toString()}
-      renderItem={({item}) => <CardStream data={item} size={data.size} />}
+      renderItem={({item}) => (
+        <CardStream
+          data={item}
+          size={data.size}
+          hasDesc={data.hasDesc}
+          ratio={data.ratio}
+        />
+      )}
     />
   );
 };
