@@ -13,7 +13,7 @@ const Home = () => {
   const refList = useRef(null);
   const floatingMenuPosition = 50;
   const minimumPosition = 300;
-  const scroll = useRef(new Animated.Value(0)).current;
+  const scroll = useRef(new Animated.Value(floatingMenuPosition * 9)).current;
   const scrollDC = Animated.diffClamp(scroll, 0, floatingMenuPosition);
   const translateY = scrollDC.interpolate({
     inputRange: [0, floatingMenuPosition],
