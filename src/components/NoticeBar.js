@@ -8,11 +8,7 @@ import {colors} from '../constants/colors';
 const NoticeBar = ({message, button}) => {
   return (
     <View style={styles.container}>
-      <MaterialCommunityIcons
-        name="map-marker-off"
-        size={18}
-        color={colors.primary}
-      />
+      <MaterialCommunityIcons name="map-marker-off" size={18} color="yellow" />
 
       <View style={styles.messageContainer}>
         <Text style={styles.message}>{message}</Text>
@@ -43,13 +39,13 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'orange',
+    backgroundColor: colors.noteBg,
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderLeftWidth: 4,
-    borderLeftColor: 'red',
+    borderLeftColor: colors.noteBorder,
   },
   messageContainer: {flex: 1, marginLeft: 8},
   buttonContainer: {},
-  message: {fontSize: 12, color: colors.grayDark},
+  message: {fontSize: 12, color: colors.noteText},
 });

@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "backgroundColor": "#fff",
+        "components": [
+            {
+                "type" : "title",
+                "content1": "Traveloka Jam Terbang",
+                "content2": "Dapatkan banyak diskonan dan gratis setiap jam 7 - 9 malam WIB!"
+            },
+            {
+                "type" : "banner",
+                "content1": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75"
+            },
+            {
+                "type" : "banner_grid",
+                "size" : 2,
+                "items": [
+                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                    "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75"
+                ]
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "backgroundColor": "#fff",
+        "components": [
+            {
+                "type" : "title",
+                "content1": "Jadwal Live Stream Mendatang",
+                "content2": "Catat tanggalnya, tonton, nikmati diskonnya!"
+            },
+            {
+                "type" : "stream_slide",
+                "size" : 2,
+                "items": [
+                    {
+                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                        "title": "Jam Terbang hari ke-3",
+                        "date": "Kamis, 8 April 2021",
+                        "time": "19.00 - 20:30 WIB"
+                    },
+                    {
+                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                        "title": "Traveloka Live",
+                        "date": "",
+                        "time": ""
+                    },
+                    {
+                        "image": "https://ik.imagekit.io/tvlk/image/imageResource/2021/03/31/1617180508956-05f349b0c164a9505e44665508884e3d.png?tr=q-75",
+                        "title": "",
+                        "date": "",
+                        "time": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

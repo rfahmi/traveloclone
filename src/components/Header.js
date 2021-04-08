@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: colors.primary,
-    paddingVertical: 6,
+    paddingVertical: 8,
     paddingHorizontal: 12,
     zIndex: 1,
   },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   searchlabel: {
     fontSize: 11,
-    color: colors.gray,
+    color: '#53585B',
     marginLeft: 8,
   },
   menu: {

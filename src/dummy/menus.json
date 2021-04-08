@@ -1,54 +1,74 @@
 {
     "main" : [
         {
-            "icon": "",
+            "icon": "airplane",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#34C3F8",
             "label": "Tiket Pesawat",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "office-building",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#2A599F",
             "label": "Hotel",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "airplane-takeoff",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#961487",
             "label": "Pesawat + Hotel",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "map-marker-check-outline",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#FA6F6D",
             "label": "Xperience",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "food",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#EF5729",
             "label": "Eats",
             "isNew": true
         },
         {
-            "icon": "",
+            "icon": "train",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#FFA001",
             "label": "Kereta Api",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "bus",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#23BD53",
             "label": "Tiket Bus & Travel",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "car",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#067F89",
             "label": "Mobil",
             "isNew": false
         },
         {
-            "icon": "",
+            "icon": "alpha-r-circle",
+            "iconColor": "#FFFFFF",
+            "bgColor": "#093E62",
             "label": "Finansial",
             "isNew": true
         },
         {
-            "icon": "",
-            "label": "Finansial",
-            "isNew": true
+            "icon": "apps",
+            "iconColor": "#282D33",
+            "bgColor": "#F2F4F3",
+            "label": "Semu Produk",
+            "isNew": false
         }
     ],
     "secondary" : [

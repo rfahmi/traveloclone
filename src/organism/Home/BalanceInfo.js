@@ -34,6 +34,7 @@ export default BalanceInfo;
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#F2F4F3',
     position: 'relative',
     paddingVertical: 8,
     paddingHorizontal: 12,
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   avatar: {
-    backgroundColor: colors.white,
+    backgroundColor: '#F6F6F6',
   },
   name: {
     fontSize: 16,
@@ -55,6 +56,8 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
   scanlabel: {
-    fontSize: 12,
+    color: '#53585B',
+    fontSize: 11,
+    marginTop: 2,
   },
 });

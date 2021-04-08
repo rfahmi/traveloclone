@@ -8,7 +8,7 @@ const MainMenuSlide = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={data.main}
+        data={data.secondary}
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={(_, i) => i.toString()}
@@ -24,7 +24,6 @@ export default MainMenuSlide;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
     backgroundColor: colors.white,
   },
 });

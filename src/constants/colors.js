@@ -1,12 +1,12 @@
 import {DefaultTheme} from 'react-native-paper';
 
-const primary = '#007CE8';
+const primary = '#1BA1E2';
 const primaryLight = '#1a89ea';
-const primaryDark = '#006dcc';
+const primaryDark = '#1695DC';
 
-const secondary = '#1100bb';
-const secondaryLight = '#291ac2';
-const secondaryDark = '#0f00a5';
+const noteBg = '#FFFADA';
+const noteBorder = '#DF9900';
+const noteText = '#69654D';
 
 const gray = '#666';
 const grayLight = '#eaeaea';
@@ -14,30 +14,17 @@ const grayDark = '#444';
 
 const white = '#ffffff';
 const black = '#000000';
-const red = '#D7262E';
-const green = '#007e33';
-const goldLight = '#fffccc';
-const goldYellow = '#FFDF00';
-const pink = '#FE0097';
-const note = '#FFFF99';
-
 export const colors = {
   ...DefaultTheme.colors,
   primary,
   primaryDark,
   primaryLight,
-  secondary,
-  secondaryDark,
-  secondaryLight,
   white,
   black,
   gray,
   grayLight,
   grayDark,
-  red,
-  green,
-  goldLight,
-  goldYellow,
-  pink,
-  note,
+  noteBg,
+  noteBorder,
+  noteText,
 };
