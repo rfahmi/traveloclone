@@ -1,50 +1,73 @@
 import React, {useRef} from 'react';
-import {StyleSheet, ScrollView, Animated, RefreshControl} from 'react-native';
+import {Animated, StyleSheet} from 'react-native';
 import Header from '../components/Header';
 import NoticeBar from '../components/NoticeBar';
 import {colors} from '../constants/colors';
 import BalanceInfo from '../organism/Home/BalanceInfo';
 import HomeSection from '../organism/Home/HomeSection';
 import MainMenu from '../organism/Home/MainMenu';
+import MainMenuFloating from '../organism/Home/MainMenuFloating';
 import MainMenuSlide from '../organism/Home/MainMenuSlide';
-import {useScrollToTop} from '@react-navigation/native';
 
 const Home = () => {
   const refList = useRef(null);
+  const floatingMenuPosition = 50;
+  const minimumPosition = 300;
   const scroll = useRef(new Animated.Value(0)).current;
-  useScrollToTop(refList);
+  const scrollDC = Animated.diffClamp(scroll, 0, floatingMenuPosition);
+  const translateY = scrollDC.interpolate({
+    inputRange: [0, floatingMenuPosition],
+    outputRange: [0, -floatingMenuPosition],
+  });
+  const opacity = scrollDC.interpolate({
+    inputRange: [0, floatingMenuPosition],
+    outputRange: [1, 0],
+  });
+  const menus = require('../dummy/menus.json');
   const sections = require('../dummy/sections.json');
 
   const _renderPanel = ({item, index}) => {
     return <HomeSection data={item} />;
   };
 
-  return (
-    <>
-      <Header />
-      <ScrollView style={styles.container}>
+  const _renderTop = () => {
+    return (
+      <>
         <BalanceInfo />
-        <MainMenu />
-        <MainMenuSlide />
+        <MainMenu data={menus.main} />
+        <MainMenuSlide data={menus.secondary} />
         <NoticeBar
           message="Beberapa fitur tidak berfungsi sepenuhnya karena layanan lokasi tidak
         aktif."
           button="Buka Pengaturan"
         />
+      </>
+    );
+  };
 
-        <Animated.FlatList
-          ref={refList}
-          onScroll={Animated.event(
-            [{nativeEvent: {contentOffset: {y: scroll}}}],
-            {useNativeDriver: true},
-          )}
-          scrollEventThrottle={16}
-          data={sections}
-          renderItem={_renderPanel}
-          nestedScrollEnabled
-          onEndThreshold={0.5}
-        />
-      </ScrollView>
+  return (
+    <>
+      <Header />
+      <MainMenuFloating
+        data={menus.main}
+        opacity={opacity}
+        translateY={translateY}
+      />
+      <Animated.FlatList
+        ref={refList}
+        style={styles.container}
+        onScroll={e =>
+          e.nativeEvent.contentOffset.y > minimumPosition
+            ? scroll.setValue(e.nativeEvent.contentOffset.y)
+            : scroll.setValue(floatingMenuPosition * 9)
+        }
+        scrollEventThrottle={16}
+        data={sections}
+        ListHeaderComponent={_renderTop}
+        renderItem={_renderPanel}
+        nestedScrollEnabled
+        onEndThreshold={0.5}
+      />
     </>
   );
 };

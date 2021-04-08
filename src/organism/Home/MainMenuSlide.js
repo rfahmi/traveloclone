@@ -3,12 +3,11 @@ import {FlatList, StyleSheet, View} from 'react-native';
 import MenuItemSlide from '../../components/MenuItemSlide';
 import {colors} from '../../constants/colors';
 
-const MainMenuSlide = () => {
-  const data = require('../../dummy/menus.json');
+const MainMenuSlide = ({data}) => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={data.secondary}
+        data={data}
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={(_, i) => i.toString()}

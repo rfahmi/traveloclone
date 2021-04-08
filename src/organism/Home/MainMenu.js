@@ -3,12 +3,11 @@ import {FlatList, StyleSheet, View} from 'react-native';
 import MenuItem from '../../components/MenuItem';
 import {colors} from '../../constants/colors';
 
-const MainMenu = () => {
-  const data = require('../../dummy/menus.json');
+const MainMenu = ({data}) => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={data.main}
+        data={data}
         numColumns={5}
         keyExtractor={(_, i) => i.toString()}
         renderItem={({item}) => {

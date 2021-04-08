@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 2,
-    aspectRatio: 1 / 1,
     marginBottom: 8,
   },
   button: {
@@ -45,7 +44,7 @@ const styles = StyleSheet.create({
     color: '#53585B',
     flex: 1,
     fontSize: 10,
-    marginTop: 2,
+    marginTop: 4,
     textAlign: 'center',
   },
   new: {
