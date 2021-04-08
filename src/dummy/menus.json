@@ -1,0 +1,106 @@
+{
+    "main" : [
+        {
+            "icon": "",
+            "label": "Tiket Pesawat",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Hotel",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Pesawat + Hotel",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Xperience",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Eats",
+            "isNew": true
+        },
+        {
+            "icon": "",
+            "label": "Kereta Api",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Tiket Bus & Travel",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Mobil",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Finansial",
+            "isNew": true
+        },
+        {
+            "icon": "",
+            "label": "Finansial",
+            "isNew": true
+        }
+    ],
+    "secondary" : [
+        {
+            "icon": "",
+            "label": "PayLater Card",
+            "isNew": true
+        },
+        {
+            "icon": "",
+            "label": "Tagihan & Isi Ulang",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Asuransi",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Antar Jemput Bandara",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Paket Diskon",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Voucher hadiah",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Internet Luar negeri",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Status Penerbangan",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Budget Planner",
+            "isNew": false
+        },
+        {
+            "icon": "",
+            "label": "Notifikasi Harga",
+            "isNew": false
+        }
+    ]
+}
